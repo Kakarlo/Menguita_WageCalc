@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Output">
+
+    <TextView
+        android:id="@+id/nameWage"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/header_rounded"
+        android:gravity="center"
+        android:letterSpacing="0.03"
+        android:text="Name's Wage"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="519dp"
+        android:padding="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameWage"
+        app:layout_constraintVertical_bias="0.22000003">
+
+        <TextView
+            android:id="@+id/regular"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:background="@drawable/title_rounded"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:text="Regular"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/regularHours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/regularHoursText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.03"
+            android:padding="5sp"
+            android:text="Hours"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/regularHours"
+            app:layout_constraintEnd_toEndOf="@+id/regularHours"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/regularHours"
+            app:layout_constraintTop_toBottomOf="@+id/regular"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/regularHours"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:background="@drawable/background_rounded"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="0"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/overtime"
+            app:layout_constraintEnd_toEndOf="@+id/regular"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/regular"
+            app:layout_constraintTop_toBottomOf="@+id/regular" />
+
+        <TextView
+            android:id="@+id/regularWageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.03"
+            android:padding="5sp"
+            android:text="Wage"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/regularWage"
+            app:layout_constraintEnd_toEndOf="@+id/regularWage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/regularWage"
+            app:layout_constraintTop_toTopOf="@+id/regularHoursText" />
+
+        <TextView
+            android:id="@+id/regularWage"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:background="@drawable/background_rounded"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="0"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/regularHours"
+            app:layout_constraintEnd_toEndOf="@+id/regular"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/regular"
+            app:layout_constraintTop_toTopOf="@+id/regularHours" />
+
+        <TextView
+            android:id="@+id/overtime"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:background="@drawable/title_rounded"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:text="Overtime"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/overtimeHours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regularHours" />
+
+        <TextView
+            android:id="@+id/overtimeHoursText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.03"
+            android:padding="5sp"
+            android:text="Hours"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/overtimeHours"
+            app:layout_constraintEnd_toEndOf="@+id/overtimeHours"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/overtimeHours"
+            app:layout_constraintTop_toBottomOf="@+id/overtime"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/overtimeHours"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:background="@drawable/background_rounded"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="0"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/totalWage"
+            app:layout_constraintEnd_toEndOf="@+id/overtime"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/overtime"
+            app:layout_constraintTop_toBottomOf="@+id/overtime" />
+
+        <TextView
+            android:id="@+id/overtimeWageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.03"
+            android:padding="5sp"
+            android:text="Wage"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/overtimeWage"
+            app:layout_constraintEnd_toEndOf="@+id/overtimeWage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/overtimeWage"
+            app:layout_constraintTop_toTopOf="@+id/overtimeHoursText" />
+
+        <TextView
+            android:id="@+id/overtimeWage"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:background="@drawable/background_rounded"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="0"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/overtimeHours"
+            app:layout_constraintEnd_toEndOf="@+id/overtime"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/overtime"
+            app:layout_constraintTop_toTopOf="@+id/overtimeHours" />
+
+        <TextView
+            android:id="@+id/totalWage"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:background="@drawable/title_rounded"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:text="Total Wage"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/total"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overtimeHours" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:background="@drawable/background_rounded"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="0"
+            android:textColor="@color/bluish"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/totalWage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/totalWage"
+            app:layout_constraintTop_toBottomOf="@+id/totalWage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

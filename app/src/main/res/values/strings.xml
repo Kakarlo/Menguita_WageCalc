@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Menguita_WageCalculator</string>
+    <string-array name="job_type">
+        <item><font fgcolor='#39454b'>Regular</font></item>
+        <item><font fgcolor='#39454b'>Probationary</font></item>
+        <item><font fgcolor='#39454b'>Part-time</font></item>
+    </string-array>
+</resources>
